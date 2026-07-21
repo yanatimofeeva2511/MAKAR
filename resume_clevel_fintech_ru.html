@@ -7,24 +7,28 @@
   <style>
     @page { size: A4; margin: 0; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #eef1f5; color: #1f2933; font-family: Arial, Helvetica, sans-serif; font-size: 9.35px; line-height: 1.20; }
-    .page { width: 210mm; min-height: 297mm; margin: 0 auto 12px; padding: 10mm 11mm 9mm; background: #fff; page-break-after: always; }
+    body { margin: 0; background: #eef1f5; color: #1f2933; font-family: Arial, Helvetica, sans-serif; font-size: 10.1px; line-height: 1.27; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto 12px; padding: 11mm 12mm 10mm; background: #fff; page-break-after: always; }
     .page:last-child { page-break-after: auto; }
     h1, h2, h3, p, ul { margin-top: 0; }
-    h1 { margin-bottom: 3px; color: #0f2742; font-size: 24px; line-height: 1.04; letter-spacing: -0.03em; }
-    h2 { margin: 8px 0 4px; padding-bottom: 2px; border-bottom: 1px solid #d7dee8; color: #0f2742; font-size: 11.6px; letter-spacing: 0.08em; text-transform: uppercase; }
-    h3 { margin: 6px 0 3px; color: #173a5e; font-size: 10.4px; }
-    p { margin-bottom: 4px; }
-    ul { margin-bottom: 5px; padding-left: 13px; }
-    li { margin-bottom: 2.1px; }
-    .header { display: grid; grid-template-columns: 1fr 58mm; gap: 10px; margin-bottom: 7px; padding-bottom: 7px; border-bottom: 3px solid #0f2742; }
-    .headline { margin-bottom: 3px; color: #173a5e; font-size: 12px; font-weight: 700; }
-    .subheadline { color: #4b5563; font-size: 9.5px; }
-    .contacts { color: #4b5563; font-size: 9px; line-height: 1.35; text-align: right; }
-    .grid { display: grid; grid-template-columns: 1.35fr 0.82fr; gap: 10px; align-items: start; }
-    .card { margin-bottom: 5px; padding: 5.5px; border: 1px solid #d7dee8; border-radius: 8px; background: #f8fafc; }
-    .tags { margin: 5px 0 4px; }
-    .tag { display: inline-block; margin: 1.6px 2px 1.6px 0; padding: 2.4px 4.4px; border-radius: 999px; background: #e8f1fb; color: #0f4778; font-weight: 700; white-space: nowrap; }
+    h1 { margin-bottom: 4px; color: #0f2742; font-size: 27px; line-height: 1.04; letter-spacing: -0.03em; }
+    h2 { margin: 11px 0 6px; padding-bottom: 3px; border-bottom: 1px solid #d7dee8; color: #0f2742; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+    h3 { margin: 0 0 4px; color: #173a5e; font-size: 11.4px; }
+    p { margin-bottom: 6px; }
+    ul { margin-bottom: 6px; padding-left: 15px; }
+    li { margin-bottom: 3px; }
+    .header { display: grid; grid-template-columns: 1fr 62mm; gap: 12px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 3px solid #0f2742; }
+    .headline { margin-bottom: 4px; color: #173a5e; font-size: 13px; font-weight: 700; }
+    .subheadline { color: #4b5563; font-size: 10.4px; }
+    .contacts { color: #4b5563; font-size: 9.7px; line-height: 1.4; text-align: right; }
+    .grid { display: grid; grid-template-columns: 1.42fr 0.78fr; gap: 13px; align-items: start; }
+    .card { margin-bottom: 9px; padding: 8px 9px; border: 1px solid #d7dee8; border-radius: 9px; background: #f8fafc; }
+    .proof-tags { margin: 5px 0 0; }
+    .tag { display: inline-block; margin: 2px 3px 2px 0; padding: 3px 5px; border-radius: 999px; background: #e8f1fb; color: #0f4778; font-weight: 700; white-space: nowrap; font-size: 8.9px; }
+    .expertise-item { margin: 0 0 9px; }
+    .expertise-head { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 3px; font-weight: 700; color: #173a5e; }
+    .bar { height: 7px; border-radius: 999px; background: #edf2f7; overflow: hidden; border: 1px solid #d7dee8; }
+    .bar span { display: block; height: 100%; border-radius: 999px; background: #0f4778; }
     .role { margin-bottom: 7px; padding-bottom: 5px; border-bottom: 1px solid #e2e8f0; }
     .role:last-child { border-bottom: 0; }
     .role-title { color: #0f2742; font-size: 12.6px; font-weight: 700; }
@@ -49,30 +53,40 @@
         <h2>Профиль</h2>
         <p>Бизнес-лидер с 20+ годами опыта в крупнейших финансовых организациях России. Отвечаю за розничные направления, запуск новых продуктов, клиентский рост, партнерскую дистрибуцию, технологические миграции и федеральные проекты на стыке бизнеса, IT, операций, маркетинга, продаж и регуляторного контура.</p>
         <p>Моя ценность - в ситуациях, где нужно быстро соединить стратегию, экономику продукта, операционную модель и delivery в измеримый результат: запустить направление с нуля, перестроить действующую модель или провести сложную программу без потери клиентского опыта.</p>
-        <div class="tags"><span class="tag">20+ лет</span><span class="tag">25 млн клиентов</span><span class="tag">20 млн без простоя</span><span class="tag">2 млн федеральный проект</span><span class="tag">170 чел. / 12 команд</span><span class="tag">600+ точек продаж</span><span class="tag">70 млрд руб.</span><span class="tag">AUM +35%</span><span class="tag">88% NTB</span><span class="tag">английский C2</span></div>
 
         <h2>Управленческий фокус</h2>
-        <div class="card"><h3>BUILD - запуск самостоятельных бизнес-направлений</h3><ul><li>Определяю рынок, сегменты, бизнес-модель, стратегию, инвестиционную логику и окупаемость.</li><li>Формирую продуктовый ряд и клиентское предложение; развиваю каналы продаж, партнерства и дистрибуцию.</li><li>Собираю кросс-функциональную реализацию вместе с бизнесом, продажами, маркетингом, продуктом, операциями и IT.</li></ul></div>
-        <div class="card"><h3>TRANSFORM - корректировка существующей модели</h3><ul><li>Диагностирую модель бизнеса и определяю изменения под новые цели роста и доходности.</li><li>Пересобираю стратегию, экономику привлечения, источники финансирования, продуктовые приоритеты и операционную модель.</li><li>Провожу изменения в работающем контуре банка: продукт, процессы, технологии, оргструктура и клиентский опыт.</li></ul></div>
-        <div class="card"><h3>LEAD - сложные программы с большим количеством участников</h3><ul><li>Формирую концепт, систему принятия решений и общие цели для бизнеса, IT, операций, продаж, маркетинга, регулятора и партнеров.</li><li>Организую Agile-команды и крупные delivery-программы; удерживаю результат в условиях высокой сложности.</li><li>Обеспечиваю бесшовность критичных изменений для клиентов и операционного контура.</li></ul></div>
+        <div class="card">
+          <h3>BUILD - запуск самостоятельных бизнес-направлений</h3>
+          <ul><li>Определяю рынок, сегменты, бизнес-модель, стратегию, инвестиционную логику и окупаемость.</li><li>Формирую продуктовый ряд и клиентское предложение; развиваю каналы продаж, партнерства и дистрибуцию.</li><li>Собираю кросс-функциональную реализацию вместе с бизнесом, продажами, маркетингом, продуктом, операциями и IT.</li></ul>
+          <div class="proof-tags"><span class="tag">АКБ +11% до 2,1 млн</span><span class="tag">AUM +35%</span><span class="tag">отток - в 3 раза</span><span class="tag">N5 (+3 п.п.)</span><span class="tag">N1 автокредитный портфель</span><span class="tag">88% NTB</span><span class="tag">прибыль с 36-го месяца</span></div>
+        </div>
+        <div class="card">
+          <h3>TRANSFORM - корректировка существующей модели</h3>
+          <ul><li>Диагностирую модель бизнеса и определяю изменения под новые цели роста и доходности.</li><li>Пересобираю стратегию, экономику привлечения, источники финансирования, продуктовые приоритеты и операционную модель.</li><li>Провожу изменения в работающем контуре банка: продукт, процессы, технологии, оргструктура и клиентский опыт.</li></ul>
+          <div class="proof-tags"><span class="tag">25 млн клиентов</span><span class="tag">+25% YoY к АКБ</span><span class="tag">N2 по АКБ</span><span class="tag">масштабная IT-трансформация</span><span class="tag">P&amp;L / CIR / pNPS / MAU / DAU</span></div>
+        </div>
+        <div class="card">
+          <h3>LEAD - сложные программы с большим количеством участников</h3>
+          <ul><li>Формирую концепт, систему принятия решений и общие цели для бизнеса, IT, операций, продаж, маркетинга, регулятора и партнеров.</li><li>Организую Agile-команды и крупные delivery-программы; удерживаю результат в условиях высокой сложности.</li><li>Обеспечиваю бесшовность критичных изменений для клиентов и операционного контура.</li></ul>
+          <div class="proof-tags"><span class="tag">1,5 млн клиентов / 8 процессингов</span><span class="tag">20 млн без простоя</span><span class="tag">2 млн детей / 8 месяцев</span><span class="tag">170 человек / 12 команд</span><span class="tag">SDN-контур</span></div>
+        </div>
       </main>
       <aside>
         <h2>Целевые роли</h2>
         <p>Chief Business Officer / Chief Product Officer / Chief Operating Officer / Head of Retail Banking / Managing Director по розничному бизнесу, продуктам, платежам, клиентским платформам или трансформации финансового бизнеса.</p>
         <h2>Зоны практической экспертизы</h2>
-        <p class="note">Области с hands-on управленческим опытом и подтвержденными бизнес-результатами.</p>
-        <p><strong>Розничный бизнес и P&amp;L:</strong> стратегия, экономика привлечения, инвестиционная логика, окупаемость, P&amp;L, CIR, KPI.</p>
-        <p><strong>Продукты и рост:</strong> карты, депозиты, накопительные счета, инвестиционные и страховые продукты, платежи и переводы, автокредитование, РКО, AUM, NTB, MAU/DAU, pNPS.</p>
-        <p><strong>Каналы и партнерства:</strong> региональная сеть, партнерская дистрибуция, модели продаж, мотивация, маркетинг и CRM.</p>
-        <p><strong>Технологии и delivery:</strong> процессинг, миграции, Agile, трайбы, IT-трансформация, кросс-функциональные команды.</p>
-        <p><strong>Регуляторика:</strong> федеральные проекты, регулятор, платежные системы, международные расчеты, SDN, санкционные изменения.</p>
+        <p class="note">Уровень вовлеченности в областях, где есть hands-on управленческий опыт и подтвержденные бизнес-результаты.</p>
+        <div class="expertise-item"><div class="expertise-head"><span>Retail business and P&amp;L</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="expertise-item"><div class="expertise-head"><span>Products and growth</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="expertise-item"><div class="expertise-head"><span>Channels and partnerships</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="expertise-item"><div class="expertise-head"><span>Technology and delivery</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="expertise-item"><div class="expertise-head"><span>Regulatory</span><span>70%</span></div><div class="bar"><span style="width:70%"></span></div></div>
         <h2>Образование и языки</h2>
         <p><strong>МГОУ, Москва, 1998</strong><br>Менеджмент и экономическая политика.</p>
-        <p><strong>Русский</strong> - родной<br><strong>Английский</strong> - C2</p>
+        <p><strong>Русский</strong> - родной<br><strong>Английский</strong> - C2<br><strong>Испанский</strong> - базовый</p>
       </aside>
     </div>
   </section>
-
   <section class="page">
     <h2>Избранный опыт и достижения</h2>
     <article class="role">
